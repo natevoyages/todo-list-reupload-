@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo App</title>
+    <script src="main.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1> <img src="../src/icons/todo.svg" alt="todo icon">Todo App</h1>
+    </header>
+    <main>
+        <nav>
+            <ul>
+                <li id="today" data-value="1">
+                    <img src="../src/icons/today.svg" alt="calendar page icon">
+                     Today</li>
+             <li id="goals" data-value = "2" >
+                <img src="../src/icons/goal.svg" alt="goal icon">
+                Goals
+             </li>
+          </ul>
+
+          <ul>
+            <li>
+                <p>Projects</p>
+            </li>
+             <ul id="projects">
+             </ul>
+             <li id="add-project-div">
+                 <button id="add-project">+</button></li>
+             <li id="project-input">
+                 <input type="text" name="project" id="project">
+                 <div>
+                    <button id="project-submit">submit</button>
+                    <button id="project-cancel">cancel</button>
+                </div>
+             </li>
+        
+         </ul>
+        </nav>
+        <div id="content">
+            <div id="content-title">
+                <h2 id="content-header">Today</h2>
+                <button id="add-todo">+</button>
+            </div>
+            <div id = "todos">
+            </div>
+        </div>
+    </main>
+    <form id="pop-up-module" action="post">
+        <ul id="form-content">
+            <button class="form-close-btn">x</button>
+            <li>
+                <legend>Add Todo</legend>
+            </li>
+            <li>
+                <label for="title">Title:</label>
+                <input class="title-input" type="text" id="title" name="title">
+            </li>
+            <li>
+                <label for="description">Description:</label>
+                <input class="description-input" type="text" id="description" name="description">
+            </li>
+            <li>
+                <label for="priority">Priority:</label>
+                <select class="priority-input" id="priority" name="priority">
+                    <option>Low</option>
+                    <option selected>Medium</option>
+                    <option>High</option>
+                </select>
+            </li>
+            <li>
+                <label for="due-date">Due Date:</label>
+                <input class="Due-date-input" type="date" id="due-date" name="due-date">
+            </li>
+            <li>
+                <label class="notes-label" for="notes">Notes:</label>
+                <textarea class="notes-input" id="notes" name="notes" rows="10" cols="30"></textarea>
+            </li>
+            <li>
+                <button class="form-submit">submit</button>
+            </li>
+        </ul>
+    </form> 
+    <div id="todo-card-module">
+        <ul id="todo-card">
+            <button class="todo-close-btn">x</button>
+            <li>
+                <label for="title">Title:</label>
+                <p class="title"></p>
+                <input class="edit-title-input" type="text" id="edit-title" name="title">
+            </li>
+            <li>
+                <label for="description">Description:</label>
+                <p class="description"></p>
+                <input class="edit-description-input" type="text" id="edit-description" name="description">
+            </li>
+            <li>
+                <label for="priority">Priority:</label> 
+                <p class="priority"></p>
+                <select class="edit-priority-input" id="edit-priority" name="priority">
+                    <option class="Low">Low</option>
+                    <option class= "Medium" selected>Medium</option>
+                    <option class="High">High</option>
+                </select>
+            </li>
+            <li>
+                <label for="due-date">Due Date:</label>
+                <p class="due-date"></p>
+                <input class="edit-due-date-input" type="date" id="edit-due-date" name="due-date">
+            </li>
+            <li>
+                <label class="notes-label" for="notes">Notes:</label>
+                <p class="notes"></p>
+                <textarea class="edit-notes-input" id="edit-notes" name="notes" rows="10" cols="30"></textarea>
+            </li>
+            <li>
+                <button class="edit-form-submit">submit</button>
+            </li>
+        </ul>
+    </div>
+    <footer>
+        <p>@natevoyages 2023</p>
+    </footer>
+    
+</body>
+</html>

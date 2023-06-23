@@ -1,0 +1,140 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+body{
+    background-color: #060607;
+    height: 100vh;
+    color: white;
+  }
+
+  header{
+    height: 64px;
+    background-color: #0000b3;
+  }
+main{
+    height: calc(100vh - 64px - 32px);
+    display: flex;
+}
+  nav{
+    display: flex;
+    flex-direction: column;
+    min-width: 200px;
+    max-width: 10vw;
+    border: 1px solid #725d8d;
+    background-color: #809fff;
+    border-left: none;
+  }
+
+footer{
+    display: flex;
+    background-color: #0000b3;
+    height: 32px;
+    justify-content: center;
+    align-items: center;
+}
+
+nav > ul {
+    margin: 1rem ;
+    list-style-type: none;
+}
+nav > li{
+    display: flex;
+    align-items: center;
+}
+
+ nav > ul > li >  img {
+    height: 1rem;
+}
+h1 > img{
+    height: 2rem;
+}
+h2{
+    display: inline-block;
+}
+textarea{
+    resize: none;
+}
+
+.notes-label{
+    display: block;
+}
+
+.todo{
+    display: flex;
+    background-color: #0000b3;
+    border: 1px solid white;
+    font-size: 2rem;
+    justify-content: space-around;
+    width: 80vw;
+}
+.todo > div > img{
+    height: 2rem;
+}
+#today{
+    font-weight: bold;
+}
+#goals:hover, #today:hover{
+    background-color: #99b3ff;
+
+}
+#projects{
+    padding: 0px;
+}
+.project{
+    display: flex;
+    justify-content: space-between;
+}
+.project:hover{
+    background-color: #99b3ff;
+}
+#add-todo, #add-project{
+    margin-left: 10px;
+    border-radius: 50px;
+    border-color: blue;
+    background-color: blue;
+    color: white;
+}
+
+#add-project-div{
+    text-align: center;
+}
+#pop-up-module, #todo-card-module{
+    position: absolute;
+    top:0;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+#form-content, #todo-card{
+    background-color: white;
+    color: black;
+    width: 50vh;
+    height: 50vh;
+    list-style: none;
+}
+
+#form-content > li{
+    margin-top: 2%; 
+
+}
+
+#project-input{
+    display: none;
+}
+#project-input > div{
+    display: flex;
+    flex: auto;
+}
+#project-input > div > button{
+    flex: auto;
+}
+
+#content{
+    flex: auto;
+}
