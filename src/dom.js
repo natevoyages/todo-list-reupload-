@@ -17,8 +17,9 @@ function createProjectelement(){
     document.getElementById("projects").appendChild(li);
    
     let btnDiv = document.createElement("div");
-    let doneBtn = document.createElement("img");
-    doneBtn.src = "../dist/icons/delete.svg";
+    let doneBtn = document.createElement("p");
+
+    doneBtn.textContent = "X";
     btnDiv.appendChild(doneBtn);
     btnDiv.style.display = "none";
     btnDiv.style.height = "1rem";
